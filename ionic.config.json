@@ -1,0 +1,7 @@
+{
+  "name": "VRegister",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

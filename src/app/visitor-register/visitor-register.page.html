@@ -1,0 +1,121 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Visitor Register</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <form [formGroup]="vRegister">
+        <ion-card>
+            <ion-card-header>
+              <ion-card-title>Host</ion-card-title>
+            </ion-card-header>
+            <ion-card-content>
+              <ion-grid>
+                  <ion-row>
+                    <ion-col>
+                      <div>
+                          <ion-input type="text" placeholder="Host Company" formControlName="vToCompany"></ion-input>
+          
+                      </div>
+                    </ion-col>
+                    <ion-col>
+                      <div>
+                          <ion-input type="text" placeholder="Host Name" formControlName="vToMeet"></ion-input>
+                        </div>
+                    </ion-col>
+                    
+                  </ion-row>
+                  <ion-row>
+                    <ion-col>
+                        <ion-input type="text" placeholder="Host Department" formControlName="vMeeingDept"></ion-input>
+
+                    </ion-col>
+
+                  </ion-row>
+                  <ion-row>
+                      <ion-col>
+                          <ion-input type="text" Placeholder="Purpose of Visit" formControlName="vPurpose"></ion-input>
+  
+                      </ion-col>
+  
+                    </ion-row>
+                   
+
+                </ion-grid>
+              
+              
+          
+              </ion-card-content>
+          
+
+          </ion-card>
+          <ion-card>
+            <ion-card-header>
+              <ion-card-title>
+              Visitor Information
+            </ion-card-title>
+            </ion-card-header>
+            <ion-card-content>
+                <ion-row>
+                    <ion-col>
+                      <div>
+                          <ion-input type="text" placeholder="Visitor First Name" formControlName="vFirstName"></ion-input>
+          
+                      </div>
+                    </ion-col>
+                    <ion-col>
+                      <div>
+                          <ion-input type="text" placeholder="Visitor Last Name" formControlName="vLastName"></ion-input>
+                        </div>
+                    </ion-col>
+                    
+                  </ion-row>
+              <ion-row>
+                <ion-col>
+                    <ion-input type="text" placeholder="ID Type" formControlName="vIDType"></ion-input>
+
+                </ion-col>
+                <ion-col>
+                    <ion-input type="text" Placeholder="ID Number" formControlName="vIDNumber"></ion-input>
+
+                </ion-col>
+                </ion-row>
+                <ion-row>
+                  <ion-col>
+                      <ion-input type="text" placeholder="Visitor Company Name" formControlName="vCompanyFrom"></ion-input>
+
+                  </ion-col>
+                </ion-row>
+                <ion-row>
+                    <ion-col>
+                        <ion-input type="text" Placeholder="Pass No" formControlName="vPassNo"></ion-input>
+
+                    </ion-col>
+                  </ion-row>
+                  <ion-row>
+                      <ion-col>
+                          <ion-input type="text" Placeholder="Issued Date" formControlName="vIssueDate"></ion-input>
+
+                      </ion-col>
+                      <ion-col>
+                          <ion-input type="text" Placeholder="Returned Dated" formControlName="vReturnDate"></ion-input>
+
+                      </ion-col>
+                    </ion-row>
+                    <ion-row>
+                      <ion-col>
+                          <ion-input type="text" Placeholder="Mode Of Transport" formControlName="vModeOfTransport"></ion-input>
+ 
+                      </ion-col>
+                    </ion-row>
+            </ion-card-content>
+
+          </ion-card>
+
+    
+    
+
+    </form>
+
+</ion-content>
