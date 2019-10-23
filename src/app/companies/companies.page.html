@@ -4,7 +4,7 @@
   </ion-toolbar>
 </ion-header>
 <ion-content>
-  <form [formGroup]="registerCompany">
+  <form [formGroup]="company_data">
         <ion-card  >
 
           <ion-card-content>
@@ -51,6 +51,10 @@
                     <ion-input type="text" Placeholder="Telephone No" formControlName="cTelephoneNumber"></ion-input>
 
                 </ion-col>
+                </ion-row>
+                <ion-row>
+                  <button ion-button primary (click)="registerCompany()">Register</button>
+
                 </ion-row>
                 
           </ion-card-content>

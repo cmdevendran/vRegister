@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import {FormControl, FormGroup} from '@angular/forms';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { map } from 'rxjs/operators';
+import { headersToString } from 'selenium-webdriver/http';
 
 @Component({
   selector: 'app-companies',
@@ -8,7 +11,11 @@ import {FormControl, FormGroup} from '@angular/forms';
 })
 export class CompaniesPage implements OnInit {
 
-  registerCompany = new FormGroup({
+   
+
+
+  constructor(private http:HttpClient) { }
+  company_data = new FormGroup({
     cCompanyName: new FormControl(''),
     cCompanyID: new FormControl(''),
 
@@ -20,9 +27,24 @@ export class CompaniesPage implements OnInit {
     
   });
 
-  constructor() { }
-
   ngOnInit() {
   }
+
+  registerCompany() {
+    var headers = new HttpHeaders();
+    headers.append('Accept', 'application/json');
+    headers.append('Content-Type','application/json');
+
+
+
+    
+    this.http.post('http://localhost:8081/register_company', this.company_data, {headers : headers}).pipe(map(res => res)
+    ).subscribe(response => {
+        console.log('POST Response:', response);
+    });
+
+  
+
+}
 
 }
