@@ -1,0 +1,65 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Register Company</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <form [formGroup]="registerCompany">
+        <ion-card  >
+
+          <ion-card-content>
+              <ion-row>
+     
+                  <ion-col>
+                    <div>
+                        <ion-input type="text" placeholder="Company Name" formControlName="cCompanyName"></ion-input>
+                      </div>
+                  </ion-col>
+                  <ion-col>
+                    <div>
+                        <ion-input type="text" placeholder="Register Company" formControlName="cCompanyID"></ion-input>
+        
+                    </div>
+                  </ion-col>
+                  
+                </ion-row>
+           
+              <ion-row>
+                <ion-col>
+                    <ion-input type="text" placeholder="Address" formControlName="cAddress1"></ion-input>
+
+                </ion-col>
+              </ion-row>
+              <ion-row>
+                  <ion-col>
+                      <ion-input type="text" Placeholder="Address2" formControlName="cAddress2"></ion-input>
+
+                  </ion-col>
+                </ion-row>
+                <ion-row>
+                  <ion-col>
+                      <ion-input type="text" Placeholder="Pincode" formControlName="cPinCode"></ion-input>
+
+                  </ion-col>
+                </ion-row>
+                <ion-row>
+                  <ion-col>
+                      <ion-input type="text" Placeholder="Contact Person" formControlName="cContactPerson"></ion-input>
+
+                  </ion-col>
+                  <ion-col>
+                    <ion-input type="text" Placeholder="Telephone No" formControlName="cTelephoneNumber"></ion-input>
+
+                </ion-col>
+                </ion-row>
+                
+          </ion-card-content>
+
+        </ion-card>
+
+  
+  
+
+  </form>
+
+</ion-content>
